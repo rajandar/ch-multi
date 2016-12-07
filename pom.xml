@@ -43,18 +43,18 @@
   </build>	
    <distributionManagement>
   <repository>
-    <id>releases</id>
-    <url>http://127.0.0.1:8081/nexus/content/repositories/releases</url>
+    <id>mavan-releases</id>
+    <url>http://localhost:8081/repository/maven-releases/</url>
   </repository>
   <snapshotRepository>
-    <id>snapshots</id>
-    <url>http://127.0.0.1:8081/nexus/content/repositories/snapshots</url>
+    <id>mavan-snapshots</id>
+    <url>http://localhost:8081/repository/maven-snapshots/</url>
   </snapshotRepository>
 </distributionManagement>
 <repositories>
     <repository>
-        <id>releases</id>
-        <url>http://127.0.0.1:8081/nexus/content/groups/public/</url>
+        <id>mavan-releases</id>
+        <url>http://localhost:8081/repository/maven-releases/</url>
         <releases>
 <enabled>true</enabled>
 </releases>
@@ -66,8 +66,8 @@
    </repositories>
 <pluginRepositories>
 <pluginRepository>
-<id>releases</id>
-        <url>http://127.0.0.1:8081/nexus/content/groups/public/</url>
+<id>mavan-releases</id>
+        <url>http://localhost:8081/repository/maven-releases/</url>
         <releases>
 <enabled>true</enabled>
 </releases>
